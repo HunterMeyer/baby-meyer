@@ -7,18 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash&display=swap" rel="stylesheet">
     <style>
       .ease-bg:hover { transition: background .2s ease; }
       .ease-color:hover { transition: color .2s ease; }
       .text-2xl { font-size: 2rem; }
-      .text-8xl { font-size: 8rem; }
+      .banner {
+        font-family: 'Cherry Swash', cursive;
+        font-size: 6rem;
+        text-shadow: 0 4px 6px rgb(236, 195, 206);
+      }
+      @media (min-width: 768px) {
+        .banner { font-size: 8rem; }
+      }
     </style>
   </head>
   <body class="bg-pink-200">
-    <div class="container mx-auto px-4 mt-10 md:mt-32">
-      <h1 class="font-bold text-white text-center leading-none text-8xl">Baby Meyer</h1>
-
-      <div class="mt-10">
+    <div class="container mx-auto px-6 md:px-4 mt-10 md:mt-32">
+      <h1 class="font-bold text-white text-center leading-none banner">
+        Baby Meyer
+      </h1>
+      <div class="mt-12">
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/2 text-center md:text-right md:pr-5 my-2">
             <a href="https://rsvp.babymeyer.com" class="block md:inline-block ease-bg py-4 px-6 bg-pink-400 hover:bg-pink-500 text-white rounded-lg shadow-md text-2xl">
@@ -32,13 +41,15 @@
           </div>
         </div>
       </div>
-
-      <div class="text-base text-center font-light mt-12 leading-relaxed tracking-wider">
-        <div class="text-gray-500">March 7th at 1pm</div>
+      <div class="text-base text-center font-light mt-12 mb-4 leading-relaxed tracking-wider">
+        <div class="text-gray-500">
+          March 7th at 1pm
+        </div>
         <div>
           <a href="https://goo.gl/maps/nEAJ8nCJ6SoGRGpz6" target="_blank" title="Directions" class="ease-color text-pink-400 hover:text-pink-500 border-b border-pink-400 hover:border-pink-500">
-            12035 Backwind Dr. Jacksonville, FL 32258
+            12035 Backwind Dr. <br class="block md:hidden" />Jacksonville, FL 32258
           </a>
+        </div>
       </div>
     </div>
   </body>
